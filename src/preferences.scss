@@ -1,0 +1,53 @@
+// --- COLORS ---
+$primary: #209FB5;
+$black: #4C4F69;
+$white: #DCE0E8;
+$red: #D20F39;
+$green: #40A02B;
+$orange: #FE640B;
+
+$pri2: #67BFCE;
+$pri3: #B1DBE2;
+
+// --- default ---
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body{
+  background: $black;
+}
+
+// --- FONTS ---
+
+// jetbrains
+@font-face {
+    font-family: "jet";
+    src: url(../public/font/JetBrainsMono-Regular.ttf);
+}
+@font-face {
+    font-family: "jetBold";
+    src: url(../public/font/JetBrainsMono-Bold.ttf);
+}
+@font-face {
+    font-family: "jetExtra";
+    src: url(../public/font/JetBrainsMono-ExtraBold.ttf);
+}
+
+// caveat
+@font-face {
+    font-family: "caveat";
+    src: url(../public/font/Caveat-Regular.ttf);
+}
+@font-face {
+    font-family: "caveatBold";
+    src: url(../public/font/Caveat-Bold.ttf);
+}
+
+// --- ROOT COMPONENT --- 
+.App{
+    width: 100vw;
+    height: 100vh;
+}

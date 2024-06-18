@@ -1,0 +1,266 @@
+@import "../../../preferences.scss";
+
+// Dashboard
+.DashboardMain{
+    background-image: url(./img/main-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-family: "jet";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: $white;
+
+    div{
+      width: 35%;
+      display: flex;
+      justify-content: center;
+    }
+
+    button{
+      color: $white;
+      background-color: #4c4f6966;
+      border-radius: 64px;
+      padding: 1.5% 4%;
+      border: 4px solid $white;
+      font-size: 1.5vw;
+  }
+}
+.mainText{
+  font-size: 5vw;
+  font-family: "jetBold";
+  text-shadow: 8px 8px 4px $black;
+  display: flex;
+  flex-direction: column;
+}
+.mainTextUp{
+  text-align: start;
+}
+.mainTextDown{
+  text-align: end;
+}
+.underline{
+  font-size: 1.5vw;
+  text-decoration: underline $white;
+}
+
+// US 
+.UsMain{
+  height: 100vh;
+  width: 100vw;
+  background-color: $white;
+}
+#box1{
+  width: 100%;
+  height: 10%;
+  background-color: $primary;
+  z-index: 1;
+}
+#box2{
+  width: 100%;
+  height: 10%;
+  background-color: $pri2;
+  z-index: 2;
+}
+#box3{
+  width: 100%;
+  height: 10%;
+  background-color: $pri3;
+  z-index: 3;
+}
+#we-block{
+  width: 100%;
+  height: 70%;
+  background-color: $white;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  h1{
+    color: $primary;
+    text-align: center;
+  }
+}
+.blocks{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.block{
+  width: 20%;
+  height: 75%;
+  background-color: $black;
+  border-radius: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 32px solid $primary;
+
+  img{
+    height: 30%; 
+    aspect-ratio: 1 / 1;
+  }
+
+  h2{
+    font-family: "jetBold";
+    font-size: 3vw;
+    color: $white;
+  }
+
+  p{
+    color: $white;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: "jet";
+  }
+
+}
+.block:hover{
+  margin-bottom: 5%;
+  box-shadow: 16px 16px $pri2;
+  transition: 0.4s ease-in-out;
+}
+.block:not(:hover){
+  transition: 0.4s ease-in-out;
+}
+
+// -- REVIEWS ---
+.ReviewsMain{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.Reviews{
+  height: 100%;
+  width: 50%;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  button{
+    background-color: $primary;
+    font-family: "jetBold";
+    font-size: 1.5vw;
+    border-radius: 64px;
+    border: 4px solid $white;
+    color: $white;
+    padding: 1% 6%;
+  }
+}
+.transcription{
+  h1{
+    font-family: "jetBold";
+    font-size: 3vw;
+    color: $primary;
+    text-align: center;
+    text-shadow: 8px 8px 4px $black;
+  }
+  p{
+    font-family: "jet";
+    font-size: 3vw;
+    color: $black;
+    text-align: center;
+  }
+}
+.rating{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rate{
+  width: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rate-block{
+  background-color: $black;
+  border-radius: 48px;
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  font-family: "jetExtra";
+
+  p{
+    color: $white;
+  }
+}
+.star{
+  color: $primary;
+  font-size: 3vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rides{
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "jetBold";
+  font-size: 1.5vw;
+  color: $black;
+}
+.ride{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+}
+.stroke{
+  width: 80%;
+  height: 50%;
+  background-color: $black;
+  display: flex;
+  border-radius: 48px;
+}
+span{
+  background-color: $primary;
+  border-radius: 48px;
+}
+.st1{
+  width: 65%;
+}
+.st2{
+  width: 15%;
+}
+.st3{
+  width: 3%;
+}
+.st4{
+  width: 7%;
+}
+.st5{
+  width: 10%;
+}
+
+.Slider{
+  height: 100%;
+  width: 50%;
+  background-color: $black;
+}
+
+//Links
+.LinksMain{
+  background-color: $white;
+  height: 100vh;
+  width: 100vw;
+}
