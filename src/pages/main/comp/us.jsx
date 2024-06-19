@@ -1,4 +1,4 @@
-//import React, {useEffect} from 'react';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 //icons
 import heart from '../style/icon/heart.svg';
@@ -9,6 +9,7 @@ import clipboard from '../style/icon/clipboard.svg';
 const UsMain = () => {
     return (
         <section className="UsMain">
+
 					<div id = "box1"></div>
 					<div id = "box2"></div>
 					<div id = "box3"></div>
