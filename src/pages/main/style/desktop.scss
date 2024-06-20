@@ -25,9 +25,7 @@
   }
 }
 .mainText{
-  font-size: 5vw;
-  font-family: "jetBold";
-  text-shadow: 8px 8px 4px $black;
+  @include jetBold;
   display: flex;
   flex-direction: column;
 }

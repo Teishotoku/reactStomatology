@@ -1,1 +1,78 @@
 @import "../../../preferences.scss";
+
+.DashboardAbout{
+  @include dashboardBlock;
+  @include centerBlock;
+  @include jetBold;
+  background-image: url("../style/img/about-background.png");
+
+  div{
+    width: 40%;
+    @include centerBlock;
+    flex-direction: column;
+  }
+}
+
+.TeamAbout{
+  @include newBlock;
+  @include aroundBlock;
+}
+.person{
+  width: 33%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.lefBlock{
+  @include personBlock;
+  background-image: url("../style/img/med1.png");
+}
+.cenBlock{
+  @include personBlock;
+  background-image: url("../style/img/med2.png");
+}
+.rigBlock{
+  @include personBlock;
+  background-image: url("../style/img/med3.png");
+}
+.hoverBlock{
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.person:hover{
+  filter: grayscale(100%);
+}
+.person:hover .hoverBlock{
+  display: block;
+  @include aroundBlock;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  background-color: #4c4f6988;
+  backdrop-filter: blur(10px);
+  border-top: 4px solid $black;
+
+  h1{
+    @include jetBold;
+    text-shadow: 8px 8px 4px $primary;
+    font-size: 3vw;
+    text-decoration: underline;
+  }
+
+  div{
+    width: 60%;
+  }
+
+  p{
+    @include jet;
+    text-align: center;
+  }
+
+  button{
+    font-size: 2vw;
+    font-family: "jetBold";
+    color: $primary;
+    padding: 1% 4%;
+    border-radius: 48px;
+    border: 4px solid $primary;
+  }
+}

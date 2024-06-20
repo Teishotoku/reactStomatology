@@ -1,6 +1,11 @@
 const DashboardAbout = () => {
     return (
-        <div></div>
+        <section className="DashboardAbout">
+					<div>
+						<p>OUR DANTIST</p>
+						<p>TEAM</p>
+					</div>
+				</section>
     );
 
 }
