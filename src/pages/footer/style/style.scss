@@ -4,9 +4,7 @@ footer{
   height: 20vh;
   width: 100vw;
   background-color: $black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include aroundBlock;
 }
 .footer-center{
   width: 20%;
@@ -20,5 +18,48 @@ footer{
 
   img{
     height: 100%;
+  }
+}
+.footer-block{
+  width: 30%;
+  height: 80%;
+  border-left: 4px solid $white;
+  border-right: 4px solid $white;
+  color: $white;
+  font-family: 'jet';
+  font-size: 2vw;
+}
+.leftBlock{
+  display: flex;
+  align-items: center;
+  height: 50%;
+
+  img{
+    height: 80%;
+    padding: 0% 5%;
+  }
+} 
+hr{
+    background-color: $white;
+    color: $white;
+    height: 4px;
+}
+.footerSocial{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerAdress{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  img{
+    height: 70%;
+    padding: 0% 5%;
   }
 }
