@@ -1,0 +1,24 @@
+@import "../../../preferences.scss";
+
+footer{
+  height: 20vh;
+  width: 100vw;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-center{
+  width: 20%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $white;
+  font-family: "caveat";
+  font-size: 3vw;
+
+  img{
+    height: 100%;
+  }
+}
