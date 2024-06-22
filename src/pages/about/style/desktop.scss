@@ -16,15 +16,13 @@
 .TeamAbout{
   @include newBlock;
   @include aroundBlock;
+  justify-content: space-between;
 }
 .person{
-  width: 33%;
+  width: 33.2%;
   height: 100%;
   transition: all 0.5s ease-in-out;
 
-  &:hover{
-  }
-  
 }
 .lefBlock{
   @include personBlock;
@@ -108,15 +106,132 @@
 }
 .hist{
   height: 100%;
-  width: 50%;
+  width: 49.5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .leftAbout{
   background-color: $white;
 }
 .rightAbout{
   background-color: $black;
+}
 
+.headingL{
+  width: 100%;
+  display: flex;
+  height: 10%;
+  justify-content: end;
+  align-items: center;
+  font-family: "jetBold";
+  color: $black;
+  text-shadow: 8px 8px 4px $primary;
+  font-size: 3vw;
+
+  p{
+    padding-right: 3%;
+  }
+}
+.headingR{
+  width: 100%;
+  display: flex;
+  height: 10%;
+  justify-content: start;
+  align-items: center;
+  font-family: "jetBold";
+  color: $white;
+  text-shadow: 8px 8px 4px $primary;
+  font-size: 3vw;
+
+  p{
+    padding-left: 3%;
+  }
+}
+
+.blocking{
+  height: 80%;
+  border-inline: 4px solid $primary;
+  border-inline-style: none solid;
+  @include aroundBlock;
+  flex-direction: column;
+}
+.blockingR{
+  height: 80%;
+  border-inline: 4px solid $primary;
+  border-inline-style: solid none;
+  @include aroundBlock;
+  flex-direction: column;
+}
+.stage{ 
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+.transcripL{
+  width: 60%;
+  height: 100%;
+  @include centerBlock;
+  justify-content: end;
+  @include jet;
+  color: $black;
+  text-align: end;
+
+  div{
+    width: 75%;
+    height: 80%;
+    @include centerBlock;
+    justify-content: end;
+    padding-right: 5%;
+  }
+}
+.transcripR{
+  width: 60%;
+  height: 100%;
+  @include centerBlock;
+  justify-content: start;
+  @include jet;
+  color: $white;
+  text-align: start;
+
+  div{
+    width: 75%;
+    height: 80%;
+    @include centerBlock;
+    justify-content: start;
+    padding-left: 5%;
+  }
+}
+.year{
+  width: 40%;
+  height: 100%;
+  border-left: 6px solid $primary;
+  display: flex;
+  flex-direction: column;
+}
+.yearR{
+  width: 40%;
+  height: 100%;
+  border-right: 6px solid $primary;
+  display: flex;
+  flex-direction: column;
+}
+.real-year{
+  height: 50%;
+  border-bottom: 6px solid $primary;
+  @include centerBlock;
+  font-family: "jetBold";
+  font-size: 3vw;
+  color: $black;
+}
+.real-yearR{
+  height: 50%;
+  border-bottom: 6px solid $primary;
+  @include centerBlock;
+  font-family: "jetBold";
+  font-size: 3vw;
+  color: $white;
+}
+.nothing-year{
+  height: 50%;
 }

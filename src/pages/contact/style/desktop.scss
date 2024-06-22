@@ -1,0 +1,191 @@
+@import "../../../preferences.scss";
+
+.DashboardContact{
+  @include dashboardBlock;
+  background-image: url("../style/img/contact-background.png");
+  display: flex;
+}
+.contactBanner{
+  @include aroundBlock;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  background-color: $black;
+}
+.nothCont{
+  height: 5%;
+}
+.headCont{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  height: 20%;
+  font-size: 3vw;
+  color: $white;
+  font-family: "jetBold";
+  text-shadow: 8px 8px 4px $primary;
+
+  h1{
+    text-align: start;
+  }
+
+  h2{
+    text-align: end;
+  }
+}
+.hrCont{
+  height: 2%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.hrContWhite{
+  height: 50%;
+  width: 100%;
+  background-color: $white;
+}
+.hrContBlue{
+  height: 50%;
+  width: 40%;
+  background-color: $primary;
+  border: none;
+}
+.contBut{
+  width: 70%;
+  height: 25%;
+  @include aroundBlock;
+  flex-direction: column;
+}
+.butContWhite{
+  @include jet;
+  background-color: $white;
+  color: $black;
+  width: 75%;
+  height: 40%;
+  border: none;
+  border-radius: 64px;
+}
+.butContBlue{
+  @include jet;
+  width: 75%;
+  height: 40%;
+  background-color: $primary;
+  border: 4px solid $white;
+  border-radius: 64px;
+}
+.skewed{
+  @include skewedBlock;
+}
+
+// PLACE BLOCK
+.PlaceContact{
+  @include newBlock;
+  @include aroundBlock;
+  flex-direction: column;
+}
+.headPlace{
+  @include centerBlock;
+  @include jetBold;
+  width: 100%;
+  height: 15%;
+  font-size: 3vw;
+  text-shadow: 8px 8px 4px $primary;
+}
+.places{
+  width: 90%;
+  height: 80%;
+  display: flex;
+}
+
+.leftPlace{
+  height: 100%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.leftUpPlace{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.leftUpPlaceOne{
+  height: 100%;
+  width: 27%;
+  background-color: #222;
+  @include imgBlock;
+  background-image: url("../style/img/hospVert1.png");
+}
+.leftUpPlaceTwo{
+  height: 100%;
+  width: 70%;
+  background-color: #222;
+  @include imgBlock;
+  background-image: url("../style/img/hospHor1.png");
+}
+.leftDownPlace{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.leftDownPlaceOne{
+  @include imgBlock;
+  background-image: url("../style/img/hospHor2.png");
+  width: 65%;
+  height: 100%;
+}
+.leftDownPlaceNoth{
+  width: 35%;
+  height: 100%;
+  @include aroundBlock;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+.leftDownPlaceNothOne{
+  width: 95%;
+  height: 45%;
+  background-color: $pri3;
+  @include colorize($green);
+}
+.leftDownPlaceNothTwo{
+  width: 95%;
+  height: 45%;
+  background-color: $primary;
+  @include colorize($red);
+}
+
+.rightPlace{
+  @include aroundBlock;
+  height: 100%;
+  width: 25%;
+  flex-direction: column;
+}
+
+.rightPlaceNoth{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+.rightPlaceNothOne{
+  @include colorize($orange);
+  background-color: $pri2;
+  width: 40%;
+  height: 100%;
+}
+.rightPlaceNothTwo{
+  @include colorize($primary);
+  background-color: $white;
+  width: 40%;
+  height: 100%;
+}
+.rightPlaceDown{
+  width: 90%;
+  height: 55%;
+  @include imgBlock;
+  background-image: url("../style/img/hospVert2.png");
+}

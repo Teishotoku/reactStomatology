@@ -37,6 +37,11 @@ body{
   width: 100vw;
   height: 100vh;
 }
+@mixin imgBlock{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @mixin personBlock{
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,6 +63,32 @@ body{
   font-size: 5vw;
   color: $white;
   text-shadow: 8px 8px 4px $black;
+}
+@mixin colorize($backclr){
+  &:hover{
+    background-color: $backclr;
+    transition: 1s;
+  }
+  &:not(&:hover){
+    transition: 1s;
+  }
+}
+@mixin skewedBlock{
+  width: 60%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &::before{
+  content: '';
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg);
+  background-color: $black;
+  width: 40%;
+  height: 140%;
+  }
 }
 
 // --- FONTS ---
