@@ -17,17 +17,26 @@ const PlaceContact = () => {
 							<div className="leftUpPlace">
 
 								<div className="leftUpPlaceOne">
-									<div className="vertHover"></div>
+									<div className="vertHover">
+										<p>Oregon mush street 39a</p>
+										<button>SIGN</button>
+									</div>
 								</div>
 
 								<div className="leftUpPlaceTwo">
-									<div className="horHover"></div>
+									<div className="horHover">
+										<p>Oregon mush street 39a</p>
+										<button>SIGN</button>
+									</div>
 								</div>
 							</div>
 						
 							<div className="leftDownPlace">
 								<div className="leftDownPlaceOne">
-									<div className="horHover"></div>
+									<div className="horHover">
+										<p>Oregon mush street 39a</p>
+										<button>SIGN</button>
+									</div>
 								</div>
 
 								<div className="leftDownPlaceNoth">
@@ -46,7 +55,10 @@ const PlaceContact = () => {
 							</div>
 
 							<div className="rightPlaceDown">
-								<div className="vertHover"></div>
+								<div className="vertHover">
+										<p>Oregon mush street 39a</p>
+										<button>SIGN</button>
+								</div>
 							</div>
 
 						</div>
