@@ -13,12 +13,12 @@ const FOOTER = () => {
         <footer>
 					<div className="footer-block">
 						<div className="leftBlock">
-							<img src={phone}/>
+							<img src={phone} alt=""/>
 							<p>34-234-982</p>
 						</div>
 						<hr/>
 						<div className="leftBlock">
-							<img src={mail}/>
+							<img src={mail} alt=""/>
 							<p>starTist@gmail.com</p>
 						</div>
 			</div>
@@ -30,14 +30,14 @@ const FOOTER = () => {
 
 					<div className="footer-block">
 						<div className="footerSocial">
-							<img src={instagram}/>
-							<img src={facebook}/>
-							<img src={telegram}/>
+							<img src={instagram} alt=""/>
+							<img src={facebook} alt=""/>
+							<img src={telegram} alt=""/>
 						</div>
 						<hr/>
 						<div className="footerAdress">
 							<p>leak street 23b</p>
-							<img src={house}/>
+							<img src={house} alt=""/>
 						</div>
 					</div>
 

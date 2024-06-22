@@ -21,28 +21,53 @@
   width: 33%;
   height: 100%;
   transition: all 0.5s ease-in-out;
+
+  &:hover{
+  }
+  
 }
 .lefBlock{
   @include personBlock;
   background-image: url("../style/img/med1.png");
+  &::before{
+    content: " ";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    filter: grayscale(100%);
+    z-index: 0;
+  }
 }
 .cenBlock{
   @include personBlock;
   background-image: url("../style/img/med2.png");
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    filter: grayscale(100%);
+  }
 }
 .rigBlock{
   @include personBlock;
   background-image: url("../style/img/med3.png");
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    filter: grayscale(100%);
+  }
 }
 .hoverBlock{
   display: none;
-  transition: all 0.5s ease-in-out;
-}
-.person:hover{
-  filter: grayscale(100%);
+  transition: opacity 0.5s, display 0.5s;
+  opacity: 0;
+  position: relative;
 }
 .person:hover .hoverBlock{
   display: block;
+  opacity: 1;
+  transition: opacity 0.5s, display 0.5s;
   @include aroundBlock;
   flex-direction: column;
   height: 50%;
@@ -75,4 +100,23 @@
     border-radius: 48px;
     border: 4px solid $primary;
   }
+}
+
+.HistoryAbout{
+  @include newBlock;
+  display: flex;
+}
+.hist{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.leftAbout{
+  background-color: $white;
+}
+.rightAbout{
+  background-color: $black;
+
 }
