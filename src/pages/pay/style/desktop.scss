@@ -73,4 +73,100 @@
 }
 .skewedPay{
   @include skewedBlock;
+  @include centerBlock;
+}
+.blocksPay{
+  @include aroundBlock;
+  flex-direction: column;
+  width: 90%;
+  height: 80%;
+}
+.LinePay{
+  @include aroundBlock;
+  justify-content: end;
+  width: 100%;
+  height: 30%;
+}
+.blockPay{
+  @include centerBlock;
+  @include colorize($black);
+  height: 90%;
+  aspect-ratio: 1;
+  background-color: #4c4f6977;
+  margin-right: 5%;
+  border-radius: 48px;
+  img{
+    width: 70%;
+    height: 70%;
+  }
+}
+
+// DIAGRAMA
+.DiagramaPay{
+  @include newBlock;
+  display: flex;
+}
+.inputsPay{
+  width: 46%;
+  height: 100%;
+  background-color: $black;
+  @include aroundBlock;
+  flex-direction: column;
+
+  button{
+    @include jet;
+    background-color: $white;
+    width: 50%;
+    height: 8%;
+    color: $black;
+    border-radius: 96px;
+    border: none;
+    @include colorize($green);
+  }
+}
+.nothPay{
+  height: 5%;
+}
+.roundPay{
+  width: 60%;
+  height: 100%;
+  background-color: $black;
+  @include centerBlock;
+  div{
+    @include imgBlock;
+    background-image: url("../style/img/diagrama.png");
+    width: 95%;
+    height: 85%;
+    border-inline: 4px solid $black;
+    border: 4px solid $black;
+  }
+}
+.headersPay{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  @include jetBold;
+  font-size: 3vw;
+  text-shadow: 8px 8px 4px $primary;
+
+  h1{
+    text-align: start;  
+  }
+  h2{
+    text-align: end;  
+  }
+}
+.inputPay{
+  width: 70%;
+  height: 30%;
+  @include aroundBlock;
+  flex-direction: column;
+
+  input{
+    background-color: $black;
+    border: 4px solid $white;
+    border-radius: 96px;
+    @include jet;
+    padding: 2%  4%;
+  }
 }

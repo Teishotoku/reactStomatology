@@ -1,1 +1,75 @@
 @import "../../../preferences.scss";
+
+.REGISTER{
+  @include newBlock;
+  @include aroundBlock;
+  @include jetBold;
+  color: $black;
+  text-shadow: 8px 8px 4px $primary;
+  flex-direction: column;
+  background-color: $white;
+
+  button{
+    @include jetBold;
+    @include colorize($green);
+    font-size: 3vw;
+    text-shadow: none;
+    background-color: $primary;
+    border-radius: 96px;
+    width: 20%;
+    height: 10%;
+    border: none;
+  }
+}
+.nothReg{
+  height: 5%;
+}
+.twinInputsReg{
+  width: 40%;
+  @include aroundBlock;
+  justify-content: space-between;
+  input{
+    @include jet;
+    border-radius: 48px;
+    width: 40%;
+    padding: 1% 4%;
+    border: none;
+    background-color: $black;
+    color: $white;
+  }
+}
+.checkboxs{
+  @include aroundBlock;
+  width: 45%;
+  height: 10%;
+  input[type="checkbox"]{
+    height: 40%;
+    aspect-ratio: 1;
+    margin-right: 5%;
+}
+}
+.checkCont{
+  @include aroundBlock;
+  justify-content: start;
+  width: 40%;
+  height: 100%;
+  font-size: 1.5vw;
+  text-shadow: none;
+}
+.cont1{
+  width: 45%;
+  justify-content: center;
+}
+.cont2{
+  width: 55%;
+  justify-content: end;
+}
+.inputPas{
+  @include jet;
+  border-radius: 48px;
+  width: 38%;
+  padding: 0.5% 2%;
+  border: none;
+  background-color: $black;
+  color: $white;
+}

@@ -1,3 +1,10 @@
+import dollar from "../style/img/dollar.png";
+import euro from "../style/img/euro.png";
+import bitcoin from "../style/img/bitcoin.png";
+import usdt from "../style/img/usdt.png";
+import monero from "../style/img/monero.png";
+import etherium from "../style/img/ethereum.png";
+
 const WaysPay = () => {
 
     return (
@@ -39,9 +46,29 @@ const WaysPay = () => {
 							</div>
 
 						</div>
-
 					</div>
-					<div className="skewedPay"></div>
+
+					<div className="skewedPay">
+						<div className="blocksPay">
+
+							<div className="LinePay">
+								<div className="blockPay"><img src={dollar} alt=""/></div>
+							</div>
+
+							<div className="LinePay">
+								<div className="blockPay"><img src={monero} alt=""/></div>
+								<div className="blockPay"><img src={euro} alt=""/></div>
+							</div>
+
+							<div className="LinePay">
+								<div className="blockPay"><img src={bitcoin} alt=""/></div>
+								<div className="blockPay"><img src={usdt} alt=""/></div>
+								<div className="blockPay"><img src={etherium} alt=""/></div>
+							</div>
+
+						</div>
+					</div>
+
 		</section>
     );
 

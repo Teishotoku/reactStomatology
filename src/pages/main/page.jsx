@@ -22,4 +22,4 @@ const MAIN = () => {
 
 }
 
-export default MAIN;
+export {MAIN};

@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import HEADER from "./pages/header/page";
 import MAIN from "./pages/main/page";
 import ABOUT from "./pages/about/page";
@@ -10,8 +12,13 @@ const App = () => {
 
   return (
     <div className="App">
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<MAIN/>}/>
+				</Routes>
+			</BrowserRouter>
+
       <HEADER/>
-      <PAY/>
       <REGISTER/>
       <FOOTER/>
     </div>
