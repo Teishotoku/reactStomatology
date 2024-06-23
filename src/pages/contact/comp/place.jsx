@@ -1,8 +1,3 @@
-import hor1 from "../style/img/hospHor1.png";
-import hor2 from "../style/img/hospHor2.png";
-import ver1 from "../style/img/hospVert1.png";
-import ver2 from "../style/img/hospVert2.png";
-
 const PlaceContact = () => {
     return (
         <section className="PlaceContact">

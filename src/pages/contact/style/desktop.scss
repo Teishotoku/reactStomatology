@@ -59,6 +59,7 @@
 }
 .butContWhite{
   @include jet;
+  @include colorize($green);
   background-color: $white;
   color: $black;
   width: 75%;
@@ -68,6 +69,7 @@
 }
 .butContBlue{
   @include jet;
+  @include colorize($green);
   width: 75%;
   height: 40%;
   background-color: $primary;
@@ -220,4 +222,96 @@
   display: none;
   @include hovHosp;
   @include jet;
+}
+
+// SIGN
+.SignContact{
+  @include newBlock;
+  @include centerBlock;
+  background-color: $white;
+}
+.begin{
+  @include aroundBlock;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  background-color: $black;
+  p{
+    font-family: "caveat";
+    font-size: 5vw;
+    color: $white;
+    text-shadow: 8px 8px 4px $primary;
+  }
+
+  button{
+    background-color: $white;
+    color: $black;
+    padding: 1% 4%;
+    font-family: "jet";
+    font-size: 2vw;
+    border-radius: 96px;
+    border: none;
+    @include colorize($green);
+  }
+}
+.seansSign{
+  @include centerBlock;
+  width: 100%;
+  color: $black;
+  font-size: 3vw;
+  font-family: "jetBold";
+  text-shadow: 8px 8px 4px $primary;
+}
+.skewedSign{
+  @include skewedBlock;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.centerSign{
+  width: 80%;
+  height: 100%;
+
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: end;
+    width: 100%;
+  }
+}
+.inputsContact{
+  @include aroundBlock;
+  flex-direction: column;
+  height: 20%;
+  input{
+    @include jet;
+    background-color: $black;
+    border-radius: 96px;
+    border: 4px solid $white;
+    padding: 2% 4%;
+    width: 80%;
+  }
+}
+.lineInputs{
+  @include aroundBlock;
+  input{
+    padding: 2% 4%;
+    width: 30%;
+  }
+}
+.radioBox{
+  @include aroundBlock;
+  width: 80%;
+}
+.box{
+  width: 50%;
+  @include aroundBlock;
+  p{
+    font-family: "jet";
+    text-shadow: none;
+    font-size: 3vw;
+  }
+  input{
+  }
 }

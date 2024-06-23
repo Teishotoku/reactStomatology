@@ -1,1 +1,76 @@
 @import "../../../preferences.scss";
+
+.DashboardPay{
+  @include dashboardBlock;
+  @include newBlock;
+  @include centerBlock;
+  flex-direction: column;
+  background-image: url("../style/img/pay-background.png");
+}
+.centerPay{
+  @include jetBold;
+  font-size: 4vw;
+  width: 30%;
+  h1{
+    text-align: start;
+  }
+  h2{
+    text-align: end;
+  }
+}
+
+// WAYS
+.WaysPay{
+  @include newBlock;
+  display: flex;
+  background-color: $white;
+}
+.canPay{
+  width: 40%;
+  height: 100%;
+  background-color: $black;
+  @include aroundBlock;
+  flex-direction: column;
+
+  h1{
+    font-size: 5vw;
+    font-family: "jetBold";
+    text-shadow: 8px 8px 4px $primary;
+    color: $white;
+  }
+  p{
+    @include jet;
+    font-size: 2vw;
+  }
+}
+.hrPay{
+  @include hr;
+}
+.hrWhite{
+  width: 100%;
+  background-color: $white;
+}
+.hrBlue{
+  width: 50%;
+  background-color: $primary;
+}
+.valutes{
+  width: 100%;
+  @include aroundBlock;
+  flex-direction: column;
+}
+.valuteStroke{
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.rounder{
+  background-color: $white;
+  border-radius: 96px;
+  height: 50%;
+  aspect-ratio: 1;
+  margin-right: 5%;
+}
+.skewedPay{
+  @include skewedBlock;
+}
