@@ -16,6 +16,7 @@
     }
 
     button{
+      @include colorize($green);
       color: $white;
       background-color: #4c4f6966;
       border-radius: 64px;
@@ -134,6 +135,7 @@
   flex-direction: column;
 
   button{
+    @include colorize($green);
     background-color: $primary;
     font-family: "jetBold";
     font-size: 1.5vw;
@@ -334,6 +336,7 @@ span{
   align-items: center;
 
   button{
+    @include colorize($green);
     font-family: "jetBold";
     font-size: 2vw;
     background-color: $black;

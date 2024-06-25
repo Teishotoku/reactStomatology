@@ -1,6 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import { MAIN } from "../main/page";
+import MAIN from "../main/page";
+import ABOUT from "../about/page";
+import CONTACT from "../contact/page";
+import PAY from "../pay/page";
+import REGISTER from "../register/page";
+
 
 import './style/styling.scss';
 import log from "./style/img/logo-black.png";
@@ -8,6 +13,7 @@ import log from "./style/img/logo-black.png";
 const HEADER = () => {
     return(
         <header>
+
             <div className="header-block">
                 <div className="logo">
                     <img src={log} alt=''/>
@@ -15,11 +21,11 @@ const HEADER = () => {
                 </div>
 
                 <div className="pages">
-                    <a href="/">main</a>
-                    <a>about</a>
-                    <a>contact</a>
-                    <a>pay</a>
-                    <button>sign in</button>
+                    <Link to="/">main</Link>
+                    <Link to="/about">about</Link>
+                    <Link to="/contact">contact</Link>
+                    <Link to="/pay">pay</Link>
+                    <Link to="/register" className="regBlock">sign in</Link>
                 </div>
 
             </div>

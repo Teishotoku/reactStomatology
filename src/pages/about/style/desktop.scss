@@ -25,7 +25,6 @@
   &:hover .hoverBlock{
     display: block;
     opacity: 1;
-    transition: opacity 0.5s, display 0.5s;
     @include aroundBlock;
     flex-direction: column;
     height: 50%;
@@ -33,7 +32,7 @@
     background-color: #4c4f6988;
     backdrop-filter: blur(10px) grayscale(1);
     border-top: 4px solid $black;
-    animation: fade 1s ease-in-out;
+    animation: fade 0.5s ease-in-out;
 
   h1{
     @include jetBold;

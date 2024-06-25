@@ -88,6 +88,14 @@
   .Reviews{
     height: 100%;
   }
+  .rating{
+    flex-direction: column;
+    height: 70%;
+  }
+  .rate-block{
+    width: 100%;
+    height: 50%;
+  }
   .Slider{
     display: none;
   }

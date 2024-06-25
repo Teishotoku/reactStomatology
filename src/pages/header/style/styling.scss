@@ -55,6 +55,7 @@ header{
 
     a{
         color: $white;
+        text-decoration: none;
         &:hover{
             color: $primary;
             transition: 0.4s ease-in-out;
@@ -64,6 +65,15 @@ header{
         }
     }
 }
+.regBlock{
+  @include centerBlock;
+  @include colorize($white);
+  background-color: $primary;
+  color: $white;
+  width: 25%;
+  height: 70%;
+  border-radius: 48px;
+}
 
 @media(max-width: 1024px){
   .pages{
@@ -71,7 +81,8 @@ header{
     font-size: 3vw;
   }
   .logo{
-    width: 30%;
+    width: 20%;
+    justify-content: center;
       p{
         display: none;
       }
@@ -90,13 +101,20 @@ header{
     border-radius: 0;
   }
   .logo{
-    width: 30%;
+    width: 20%;
+    justify-content: start;
+    padding: 0;
     p{
       display: none;
     }
   }
   .pages{
-    width: 70%;
-    font-size: 3vw;
+    width: 80%;
+    font-size: 4vw;
+  }
+  .regBlock{
+    height: 100%;
+    border-radius: 0px;
+    width: 30%;
   }
 }
