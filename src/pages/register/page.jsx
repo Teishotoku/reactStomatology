@@ -1,8 +1,8 @@
 
 // --- STYLE --- 
 import './style/desktop.scss';
-import './style/phone.scss';
 import './style/pad.scss';
+import './style/phone.scss';
 
 
 const REGISTER = () => {

@@ -50,6 +50,10 @@ hr{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  img{
+    width: 20%;
+    height: 70%;
+  }
 }
 .footerAdress{
   width: 100%;
@@ -62,4 +66,18 @@ hr{
     height: 70%;
     padding: 0% 5%;
   }
+}
+
+@media(max-width: 1024px){
+  .footer-center{
+    display: none;
+  }
+  .footer-block{
+    width: 40%;
+    p{
+      font-size: 2.5vw;
+    }
+  }
+}
+@media(max-width: 600px){
 }

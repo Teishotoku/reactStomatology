@@ -1,5 +1,4 @@
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-
+import React, {useState, useEffect } from 'react';
 //icons
 import heart from '../style/icon/heart.svg';
 import hospital from '../style/icon/hospital.svg';
@@ -7,12 +6,21 @@ import pills from '../style/icon/pills.svg';
 import clipboard from '../style/icon/clipboard.svg';
 
 const UsMain = () => {
+		const [offsetY, setOffsetY] = useState(0);
+		const handleScroll = () => setOffsetY(window.pageYOffset);
+
+		useEffect(() => {
+			window.addEventListener("scroll", handleScroll);
+			
+			return () => window.removeEventListener("scroll", handleScroll);
+		}, []);
+
     return (
         <section className="UsMain">
 
-					<div id = "box1"></div>
-					<div id = "box2"></div>
-					<div id = "box3"></div>
+						<div id = "box1"/>
+						<div id = "box2"/>
+						<div id = "box3"/>
 
 					<div id = "we-block">
 
@@ -34,14 +42,14 @@ const UsMain = () => {
 							<div/>
 						</div>
 
-						<div className="block">
+						<div className="block blockNone">
 							<img src={pills} alt=""/>
 							<h2>68</h2>
 							<p>pills and preporats</p>
 							<div/>
 						</div>
 
-						<div className="block">
+						<div className="block blockNone">
 							<img src={clipboard} alt=""/>
 							<h2>17</h2>
 							<p>professional medics in every clinic</p>
@@ -49,7 +57,9 @@ const UsMain = () => {
 						</div>
 
 						</div>
+
 					</div>
+
 				</section>
     );
 

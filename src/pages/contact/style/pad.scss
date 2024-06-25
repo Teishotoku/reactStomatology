@@ -1,0 +1,120 @@
+@import "../../../preferences.scss";
+@media (max-width: 1377px) {
+  .skewed{
+    width: 30%;
+      &::before{
+      width: 100%;
+      transform: translateY(-70%) rotate(10deg);
+      height: 170%;
+    }
+  }
+  .contactBanner{ 
+    width: 40%;
+  }
+}
+
+@media (max-width: 1024px) {
+.contactBanner{
+    width: 100%;
+    font-size: 9vw;
+
+    button{
+      width: 80%;
+      font-size: 5vw;
+    }
+}
+  .hrCont{
+    height: 5%;
+  }
+  .skewed{
+    display: none;
+  }
+  .headPlace{
+    font-size: 7vw;
+  }
+  .headCont{
+    font-size: 7vw;
+  }
+  .contBut{
+    font-size: 7vw;
+  }
+  .leftPlace{
+    width: 100%;
+}
+.rightPlace{
+    display: none;
+  }
+.vertHover{
+    font-size: 4vw;
+    button{
+      width: 80%;
+      font-size: 4vw;
+    }
+}
+  .horHover{
+    font-size: 4vw;
+    flex-direction: column;
+    text-align: center;
+    button{
+      width: 40%;
+      font-size: 4vw;
+    }
+  }
+  .begin{
+    width: 100%;
+    p{
+    font-size: 9vw;
+    }
+    button{
+      width: 70%;
+      height: 10%;
+      font-size: 5vw;
+    }
+  }
+  .skewedSign{
+    display: none;
+  }
+  .inputsContact{
+    width: 80%;
+    height: 35%;
+    input{
+      font-size: 3vw;
+    }
+  }
+  .lineInputs{
+    width: 100%;
+    height: 66%;
+    flex-direction: column;
+    input{
+      width: 80%;
+      font-size: 3vw;
+    }
+  }
+  .radioBox{
+    width: 90%;
+    flex-direction: column;
+  }
+  .box{
+    justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .PlaceContact{
+    display: none;
+  }
+  .begin{
+    p{
+      font-size: 11vw;
+    }
+  }
+  .inputsContact{
+    input{
+      font-size: 7vw;
+    }
+  }
+  .box{
+    width: 70%;
+  }
+}

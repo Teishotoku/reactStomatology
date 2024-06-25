@@ -64,3 +64,39 @@ header{
         }
     }
 }
+
+@media(max-width: 1024px){
+  .pages{
+    width: 70%;
+    font-size: 3vw;
+  }
+  .logo{
+    width: 30%;
+      p{
+        display: none;
+      }
+    } 
+}
+
+@media(max-width: 600px){
+  .rate-block{
+    p{
+      font-size: 9vw;
+    }
+  }
+  .header-block{
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+  .logo{
+    width: 30%;
+    p{
+      display: none;
+    }
+  }
+  .pages{
+    width: 70%;
+    font-size: 3vw;
+  }
+}

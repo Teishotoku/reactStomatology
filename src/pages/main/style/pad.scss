@@ -1,1 +1,97 @@
 @import "../../../preferences.scss";
+@media(max-width: 1024px){
+  .DashboardMain{
+    font-size: 7vw;
+
+    div{
+      width: 70%;
+    }
+    button{
+      width: 50%;
+      font-size: 3vw;
+    }
+  }
+  .mainText{
+    font-size: 9vw;
+  }
+  .underline{
+    font-size: 3vw;
+  }
+  .UsMain{
+    height: 140vh;
+  }
+  #box1{
+    height: 5%;
+  }
+  #box2{
+    height: 5%;
+  }
+  #box3{
+    height: 5%;
+  }
+  #we-block{
+    height: 80%;
+  }
+  .blocks{
+    height: 100%;
+    flex-direction: column;
+    p{
+      font-size: 3vw;
+    }
+    h2{
+      font-size: 5vw;
+    }
+  }
+  .block{
+    height: 40%;
+    width: 60%;
+  }
+  .blockNone{
+    display: none;
+  }
+  .ReviewsMain{
+    flex-direction: column;
+    height: 150vh;
+  }
+  .Reviews{
+    width: 100%;
+    h1{
+      font-size: 7vw;
+    }
+    p{
+      font-size: 3vw;
+    }
+    button{
+      font-size: 3vw;
+      @include colorize($green);
+    }
+  }
+  .centering{
+    width: 90%;
+  }
+  .rate{
+    height: 80%;
+  }
+  .rate-block{
+    width: 50%;
+    height: 100%;
+    p{
+      font-size: 5vw;
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .ReviewsMain{
+    height: 100vh;
+  }
+  .Reviews{
+    height: 100%;
+  }
+  .Slider{
+    display: none;
+  }
+  .LinksMain{
+    display: none;
+  }
+}

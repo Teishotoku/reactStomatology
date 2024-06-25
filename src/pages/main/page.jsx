@@ -23,3 +23,4 @@ const MAIN = () => {
 }
 
 export {MAIN};
+export default MAIN;

@@ -1,1 +1,85 @@
 @import "../../../preferences.scss";
+
+@media (max-width: 1024px){
+  .DashboardAbout{
+    font-size: 9vw;
+    div{
+      width: 70%;
+    }
+  }
+  .person{
+    &:hover .hoverBlock{
+      h1{
+        font-size: 7vw;
+      }
+      p{
+        font-size: 3vw;
+      }
+      button{
+        width: 80%;
+        height: 20%;
+        font-size: 4vw;
+      }
+    }
+  }
+  .lefBlock{
+    display: none;
+  }
+  .cenBlock{
+    width: 50%;
+  }
+  .rigBlock{
+    width: 50%;
+  }
+  .leftAbout{
+    display: none;
+  }
+  .rightAbout{
+    width: 100%;
+  }
+  .hoverBlock{
+    h1{
+      font-size: 9vw;
+    }
+  }
+  .real-yearR{
+    font-size: 7vw;
+  }
+  .headingR{
+    justify-content: center;
+    font-size: 9vw;
+  }
+  .transcripR{
+    font-size: 4vw;
+  }
+}
+@media (max-width: 600px){
+  .TeamAbout{
+    flex-direction: column;
+    height: 200vh;
+  }
+  .blockingR{
+    border-left: none;
+  }
+  .person{
+    width: 100%;
+  }
+  .stage{
+    flex-direction: column;
+    align-items: center;
+  }
+  .transcripR{
+    justify-content: center;
+    text-align: center;
+  }
+  .yearR{
+    width: 50%;
+    border-right: none;
+  }
+  .real-yearR{
+    height: 80%;
+  }
+  .nothing-year{
+    height: 20%;
+  }
+}

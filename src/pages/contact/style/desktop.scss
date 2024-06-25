@@ -116,7 +116,6 @@
 .leftUpPlaceOne{
   height: 100%;
   width: 27%;
-  background-color: #222;
   @include imgBlock;
   background-image: url("../style/img/hospVert1.png");
 
@@ -124,8 +123,10 @@
     @include aroundBlock;
     flex-direction: column;
     text-align: center;
+    animation: fade 1s ease-in-out;
   }
 }
+
 .leftUpPlaceTwo{
   height: 100%;
   width: 70%;
@@ -136,6 +137,7 @@
   &:hover .horHover{
     @include aroundBlock;
     display: flex;
+    animation: fade 1s ease-in-out;
   }
 }
 .leftDownPlace{
@@ -153,6 +155,7 @@
   &:hover .horHover{
     @include aroundBlock;
     display: flex;
+    animation: fade 1s ease-in-out;
   }
 }
 .leftDownPlaceNoth{
@@ -211,12 +214,14 @@
     @include aroundBlock;
     flex-direction: column;
     text-align: center;
+    animation: fade 1s ease-in-out;
   }
 }
 .horHover{
   display: none;
   @include hovHosp;
   @include jet;
+  text-align: center;
 }
 .vertHover{
   display: none;
@@ -311,7 +316,5 @@
     font-family: "jet";
     text-shadow: none;
     font-size: 3vw;
-  }
-  input{
   }
 }

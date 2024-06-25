@@ -1,1 +1,109 @@
 @import "../../../preferences.scss";
+
+@media (max-width: 1024px) {
+.centerPay{
+    font-size: 7vw;
+    width: 60%;
+}
+.WaysPay{
+    height: 180vh;
+    flex-direction: column;
+}
+.canPay{
+    width: 100%;
+    h1{
+        font-size: 7vw;
+    }
+    p{
+        font-size: 5vw;
+    }
+}
+.hrPay{
+    height: 5%;
+}
+.valuteStroke{
+    width: 30%;
+}
+.skewedPay{
+    width: 100%;
+}
+.DiagramaPay{
+    flex-direction: column;
+    height: 180vh;
+}
+.inputsPay{
+    width: 100%;
+    height:50%;
+    button{
+        width: 40%;
+        height: 10%;
+        font-size: 5vw;
+    }
+}
+.headersPay{
+    width: 60%;
+    font-size: 7vw;
+}
+.inputPay{
+    input{
+        width: 80%;
+        font-size: 3vw;
+    }
+}
+.roundPay{
+    @include centerBlock;
+    width: 100%;
+    height: 50%;
+    div{
+        width: 90%;
+        aspect-ratio: 1;
+    }
+}
+}
+
+@media (max-width: 600px) {
+.WaysPay{
+    height: 100vh;
+}
+.canPay{
+    h1{
+        font-size: 9vw;
+    }
+    p{
+        font-size: 7vw;
+    }
+}
+.skewedPay{
+    display: none;
+}
+.centerPay{
+    font-size: 7vw;
+    width: 60%;
+}
+.DiagramaPay{
+    height: 100vh;
+}
+.inputsPay{
+    height: 100%;
+    button{
+        width: 60%;
+        font-size: 7vw;
+    }
+}
+.inputPay{
+    width: 90%;
+    input{
+        height: 15%;
+        font-size: 5vw;
+    }
+}
+.roundPay{
+    display: none;
+    width: 100%;
+    height: 50%;
+    div{
+        width: 90%;
+        aspect-ratio: 1;
+    }
+}
+}

@@ -1,1 +1,80 @@
 @import "../../../preferences.scss";
+
+@media (max-width: 1024px){
+
+.REGISTER{
+    font-size: 7vw;
+    input{
+        font-size: 3vw;
+    }
+    button{
+        width: 40%;
+    }
+}
+
+.twinInputsReg{
+    flex-direction: column;
+    height: 17%;
+    input{
+        width: 100%;
+    }
+}
+.checkboxs{
+    width: 40%;
+    align-items: start;
+    flex-direction: column;
+}
+.cont1{
+    width: 100%;
+    justify-content: start;
+    font-size: 2vw;
+}
+.cont2{
+    width: 100%;
+    justify-content: start;
+    font-size: 2vw;
+}
+
+}
+
+@media (max-width: 600px){
+.REGISTER{
+    font-size: 9vw;
+    input{
+        width: 80%;
+        height: 5%;
+        font-size: 5vw;
+    }
+    button{
+        width: 80%;
+        font-size: 7vw;
+    }
+}
+.twinInputsReg{
+    width: 80%;
+    input{
+        height: 25%;
+        width: 100%;
+        font-size: 5vw;
+    }
+}
+.checkboxs{
+    width: 80%;
+    font-size: 5vw;
+}
+.checkCont{
+    width: 80%;
+    input{
+        height: 5%;
+        width: 20%;
+    }
+}
+.cont1{
+    width: 100%;
+    font-size: 4vw;
+}
+.cont2{
+    width: 100%;
+    font-size: 4vw;
+}
+}
