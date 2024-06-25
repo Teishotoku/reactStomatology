@@ -1,3 +1,14 @@
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import photo1 from "../style/img/man-slider1.jpg";
+import photo2 from "../style/img/man-slider2.jpg";
+import photo3 from "../style/img/man-slider3.jpg";
+import photo4 from "../style/img/man-slider4.jpg";
+
 const ReviewsMain = () => {
     return (
         <section className="ReviewsMain">
@@ -48,7 +59,91 @@ const ReviewsMain = () => {
 						<button>LEAVE A REVIEW</button>
 					</div>
 
-					<div className="Slider"></div>
+					<div className="Slider">
+
+     <Swiper
+        direction={'vertical'}
+				slidesPerView={1}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide><div className="slide">
+					<div className="infoSlide">
+						<div className="upInfoSlide">
+							<p>startist make my smile really white and beutiful</p>
+						</div>
+
+						<div className="downInfoSlide">
+							<div className="ratingSlide"><p>5</p></div>
+							<div className="nameSlide">
+								<p>Jack R.</p>
+								<div className="star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+								</div>
+						</div>
+
+					</div>
+					<div className="imgSlide"><img src={photo1} alt=""/></div>
+				</div></SwiperSlide>
+
+        <SwiperSlide><div className="slide">
+					<div className="infoSlide">
+						<div className="upInfoSlide">
+							<p>Now it's not a shame to show your teeth in public</p>
+						</div>
+
+						<div className="downInfoSlide">
+							<div className="ratingSlide"><p>5</p></div>
+							<div className="nameSlide">
+								<p>Nikolas F.</p>
+								<div className="star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+								</div>
+						</div>
+
+					</div>
+					<div className="imgSlide"><img src={photo2} alt=""/></div>
+				</div></SwiperSlide>
+
+        <SwiperSlide><div className="slide">
+					<div className="infoSlide">
+						<div className="upInfoSlide">
+							<p>The pain no longer haunts me during a snack</p>
+						</div>
+
+						<div className="downInfoSlide">
+							<div className="ratingSlide"><p>5</p></div>
+							<div className="nameSlide">
+								<p>Steve L.</p>
+								<div className="star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+								</div>
+						</div>
+
+					</div>
+					<div className="imgSlide"><img src={photo3} alt=""/></div>
+				</div></SwiperSlide>
+
+        <SwiperSlide><div className="slide">
+					<div className="infoSlide">
+						<div className="upInfoSlide">
+							<p>The wisdom tooth has finally bee removed and doesn't bother me anymore</p>
+						</div>
+
+						<div className="downInfoSlide">
+							<div className="ratingSlide"><p>5</p></div>
+							<div className="nameSlide">
+								<p>Klaine A.</p>
+								<div className="star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+								</div>
+						</div>
+
+					</div>
+					<div className="imgSlide"><img src={photo4} alt=""/></div>
+				</div></SwiperSlide>
+
+      </Swiper>
+			</div>
 
 				</section>
     );

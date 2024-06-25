@@ -26,6 +26,9 @@
 }
 .skewedPay{
     width: 100%;
+    &::before{
+      left: -30%;
+    }
 }
 .DiagramaPay{
     flex-direction: column;

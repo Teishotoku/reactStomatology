@@ -1,5 +1,3 @@
-import diagrama from "../style/img/diagrama.png";
-
 const DiagramaPay = () => {
 
     return (

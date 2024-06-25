@@ -55,6 +55,7 @@
   }
   .Reviews{
     width: 100%;
+    height: 50%;
     h1{
       font-size: 7vw;
     }
@@ -77,6 +78,27 @@
     height: 100%;
     p{
       font-size: 5vw;
+    }
+  }
+  .Slider{
+    width: 100%;
+    height: 50%;
+  }
+  .slide{
+    height: 70%;
+  }
+  .upInfoSlide{
+    font-size: 3vw;
+  }
+  .downInfoSlide{
+    justify-content: space-around;
+  }
+  .nameSlide{
+    font-size: 3vw;
+  }
+  .rate-block{
+    p{
+      font-size: 9vw;
     }
   }
 }
