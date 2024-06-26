@@ -10,7 +10,7 @@ const LinksMain = () => {
 
 									<div className="paragraph">
 										<div className="round"><div className="inside"/></div>
-										<p>500 <span>400</span> dollars of operation in this 5 days</p>
+										<p><span className="through"> 500</span> <span className="price">400</span> dollars of operation in this 5 days</p>
 								  </div>
 
 								</div>

@@ -289,11 +289,15 @@ span{
   p{
     width: 90%;
     span{
-      color: $primary;
       background-color: $black;
     }
   }
 
+}
+.through{
+  color: $primary;
+  background-color: $black;
+  text-decoration: line-through;
 }
 .round{
   width: 10%;
